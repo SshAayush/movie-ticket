@@ -75,8 +75,11 @@
             <th><?php echo $item['movieName']; ?></th>
             <th><?php echo $item['seat']; ?></th>
             </tr>
-            <?php } ?>
+            <?php 
+        } 
+        ?>
         </table>
     </div>
+    <a><button type="button" onclick="window.location.href='customerPage.php'">Back</button></a>
     </body>
     </html>

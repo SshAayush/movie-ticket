@@ -87,12 +87,12 @@ include 'db.php';?>
 
 												<tr>
 													<td><strong>Date</strong></td>
-													<td><input class="boxStyle" type="date" name="date"></td>
+													<td><input class="boxStyle" type="date" name="date" required></td>
 												</tr>
 												<tr>
 
 													<td><strong>Show Time</strong></td>
-													<td>  <select name="timeSlot" class="boxStyle"> 
+													<td>  <select name="timeSlot" class="boxStyle" required> 
 														<?php $timeSlot=$conn->query("select time from timeslot"); 
 														while ($showTime=$timeSlot->fetch_object()) {
 
